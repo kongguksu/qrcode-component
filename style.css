@@ -45,15 +45,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  height: 100vh;
   font-family: "Outfit", sans-serif;
   font-size: 1.5rem;
   background-color: hsl(212, 45%, 89%);
-  max-width: 144rem;
 
   margin: 0 auto;
-
-  height: 100vh;
-  position: relative;
 }
 
 .qrcode-card {
@@ -66,10 +69,7 @@ body {
   width: 30rem;
   border-radius: 15px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
 }
 
 .qrcode-img-container {
@@ -103,7 +103,6 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  padding-top: 1.2rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
