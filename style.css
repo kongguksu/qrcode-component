@@ -96,7 +96,7 @@ body {
 }
 
 .qrcode-text--description {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: hsl(220, 15%, 55%);
 
   margin-top: 1rem;
