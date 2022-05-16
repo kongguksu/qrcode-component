@@ -34,28 +34,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned + Continued development
 
-While using absolute positioning with tranform: translate() to center the QR code card, the top percentage wasn't working. I realized that I needed to specify the height of the parent div to make it work (if I'm correct).
-
-```css
-body {
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
-  background-color: hsl(212, 45%, 89%);
-  max-width: 144rem;
-
-  margin: 0 auto;
-
-  height: 100vh;
-  position: relative;
-}
-
-.qrcode-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-```
+I used flexbox to center the qrcode-card vertically and horizontally. In the process of doing this, I learned that it's useful to set **html {width: 100%}** and **body {min-width: 100%}** when making sure that the body takes up the whole browser screen.
 
 ## Author
 
